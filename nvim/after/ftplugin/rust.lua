@@ -1,0 +1,25 @@
+-- local bufnr = vim.api.nvim_get_current_buf()
+--
+-- -- Debug the test/binary under cursor
+-- vim.keymap.set("n", "<leader>rd", function()
+--   vim.cmd.RustLsp('debug')
+-- end, { silent = true, buffer = bufnr })
+--
+-- -- Pick from all debuggable targets
+-- vim.keymap.set("n", "<leader>rD", function()
+--   vim.cmd.RustLsp('debuggables')
+-- end, { silent = true, buffer = bufnr })
+--
+-- -- Continue / start debugging (nvim-dap)
+-- vim.keymap.set("n", "<leader>dc", function()
+--   require('dap').continue()
+-- end, { silent = true, buffer = bufnr })
+--
+-- -- Set breakpoint (nvim-dap)
+-- vim.keymap.set("n", "<leader>db", function()
+--   require('dap').toggle_breakpoint()
+-- end, { silent = true, buffer = bufnr })
+--
+-- vim.keymap.set('n', '<leader>dr', function()
+--     require('dap').restart() 
+-- end, { silent = true, buffer = bufnr })
