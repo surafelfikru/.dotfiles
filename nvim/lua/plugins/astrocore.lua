@@ -47,6 +47,10 @@ return {
         tabstop = 4,
         shiftwidth = 4,
         expandtab = true,
+        -- per-project LSP config: load .nvim.lua from project root if present
+        -- neovim will prompt to trust new files once; managed via :trust
+        exrc = true,
+        secure = true, -- sandbox: prevents shell/write cmds in untrusted .nvim.lua files
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
