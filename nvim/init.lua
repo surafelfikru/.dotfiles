@@ -15,6 +15,10 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+-- Must be set early so Neovim loads .nvim.lua before plugins initialize
+vim.opt.exrc = true
+vim.opt.secure = true
+
 -- validate that lazy is available
 if not pcall(require, "lazy") then
   -- stylua: ignore
