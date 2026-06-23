@@ -18,8 +18,17 @@ return {
       null_ls.builtins.formatting.black.with {
         extra_args = { "--line-length=79" },
       },
-      -- Optional: autopep8 as a fallback linter for PEP8 issues
-      null_ls.builtins.diagnostics.pylint,
+      -- Pylint: use the venv's pylint if available so imports resolve correctly
+      null_ls.builtins.diagnostics.pylint.with {
+        dynamic_command = function()
+          local venv = vim.env.VIRTUAL_ENV or vim.env.CONDA_PREFIX
+          if venv then
+            local bin = venv .. "/bin/pylint"
+            if vim.fn.executable(bin) == 1 then return bin end
+          end
+          return "pylint"
+        end,
+      },
     })
   end,
 }

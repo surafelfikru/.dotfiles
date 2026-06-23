@@ -43,6 +43,34 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      pylsp = {
+        -- on_new_config runs per root-dir before the server starts, correct hook for settings
+        on_new_config = function(config, _)
+          local venv = vim.env.VIRTUAL_ENV or vim.env.CONDA_PREFIX
+          if venv then
+            config.settings = vim.tbl_deep_extend("force", config.settings or {}, {
+              pylsp = { plugins = { jedi = { environment = venv .. "/bin/python" } } },
+            })
+          end
+        end,
+        settings = {
+          pylsp = {
+            plugins = {
+              -- Disable built-in linters; pylint is handled separately via mason
+              pyflakes = { enabled = false },
+              pycodestyle = { enabled = false },
+              mccabe = { enabled = false },
+              pylint = { enabled = false },
+              -- Keep jedi for completions, hover, and symbol navigation
+              jedi_completion = { enabled = true, fuzzy = true },
+              jedi_hover = { enabled = true },
+              jedi_references = { enabled = true },
+              jedi_signature_help = { enabled = true },
+              jedi_symbols = { enabled = true },
+            },
+          },
+        },
+      },
       rust_analyzer = {
         settings = {
           ["rust-analyzer"] = {
