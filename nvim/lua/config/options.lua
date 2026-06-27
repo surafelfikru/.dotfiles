@@ -30,3 +30,8 @@ opt.clipboard = "unnamedplus"
 
 opt.updatetime = 250
 opt.timeoutlen = 300
+
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
