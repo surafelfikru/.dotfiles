@@ -5,6 +5,7 @@ return {
     { "<leader>tf", mode = { "n", "t" }, desc = "Toggle float terminal" },
     { "<leader>tr", mode = { "n", "t" }, desc = "Toggle right terminal" },
     { "<leader>tl", mode = { "n", "t" }, desc = "Toggle left terminal" },
+    { "<leader>gg", desc = "Lazygit" },
   },
   config = function()
     require("toggleterm").setup({
@@ -29,11 +30,23 @@ return {
       hidden = true,
     })
 
+    local lazygit = Terminal:new({
+      cmd = "lazygit",
+      direction = "float",
+      hidden = true,
+      close_on_exit = true,
+      float_opts = { border = "curved" },
+      on_open = function(_)
+        vim.cmd("startinsert")
+      end,
+    })
+
     local map = vim.keymap.set
     map({ "n", "t" }, "<C-\\>",    function() float_term:toggle() end)
     map({ "n", "t" }, "<leader>tf", function() float_term:toggle() end)
     map({ "n", "t" }, "<leader>tr", function() right_term:toggle() end)
     map({ "n", "t" }, "<leader>tl", function() left_term:toggle() end)
+    map("n", "<leader>gg", function() lazygit:toggle() end, { desc = "Lazygit" })
 
     -- exit terminal insert mode with <Esc>
     map("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
