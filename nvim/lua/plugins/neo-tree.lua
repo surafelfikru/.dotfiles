@@ -8,7 +8,7 @@ return {
   },
   cmd = "Neotree",
   keys = {
-    { "<leader>e", "<cmd>Neotree position=float toggle<cr>", desc = "Explorer (center float)" },
+    { "<leader>ee", "<cmd>Neotree position=float toggle<cr>", desc = "Explorer (center float)" },
     { "<leader>er", "<cmd>Neotree position=right toggle<cr>", desc = "Explorer (right)" },
     { "<leader>el", "<cmd>Neotree position=left toggle<cr>", desc = "Explorer (left)" },
   },
