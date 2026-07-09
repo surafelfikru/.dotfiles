@@ -12,6 +12,7 @@ return {
   keys = {
     { "<leader>ff", function() require("telescope.builtin").find_files() end, desc = "Find files" },
     { "<leader>fg", function() require("telescope.builtin").live_grep() end,  desc = "Live grep" },
+    { "<leader>fm", function() require("telescope.builtin").marks() end,      desc = "Find marks" },
   },
   config = function()
     local telescope = require("telescope")
