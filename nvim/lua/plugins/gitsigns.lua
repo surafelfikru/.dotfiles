@@ -10,17 +10,9 @@ return {
         vim.keymap.set(mode, lhs, rhs, opts)
       end
 
-      -- hunk navigation (respects diff mode)
-      map("n", "]c", function()
-        if vim.wo.diff then return "]c" end
-        vim.schedule(function() gs.nav_hunk("next") end)
-        return "<Ignore>"
-      end, "Next hunk", { expr = true })
-      map("n", "[c", function()
-        if vim.wo.diff then return "[c" end
-        vim.schedule(function() gs.nav_hunk("prev") end)
-        return "<Ignore>"
-      end, "Prev hunk", { expr = true })
+      -- hunk navigation
+      map("n", "]g", function() gs.nav_hunk("next") end, "Next hunk")
+      map("n", "[g", function() gs.nav_hunk("prev") end, "Prev hunk")
 
       -- actions under <leader>g
       map("n", "<leader>gs", gs.stage_hunk, "Stage hunk")
