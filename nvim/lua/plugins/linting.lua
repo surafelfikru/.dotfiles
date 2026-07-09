@@ -18,7 +18,21 @@ return {
     vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
       group = grp,
       callback = function()
-        require("lint").try_lint()
+        -- Only run linters whose executable is actually installed, so a missing
+        -- tool (e.g. ruff) degrades silently instead of erroring on every event.
+        local names = lint.linters_by_ft[vim.bo.filetype] or {}
+        local available = {}
+        for _, name in ipairs(names) do
+          local linter = lint.linters[name]
+          local cmd = type(linter) == "table" and linter.cmd or nil
+          if type(cmd) == "function" then cmd = cmd() end
+          if type(cmd) == "string" and vim.fn.executable(cmd) == 1 then
+            table.insert(available, name)
+          end
+        end
+        if #available > 0 then
+          lint.try_lint(available)
+        end
       end,
     })
   end,
