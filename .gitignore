@@ -1,0 +1,4 @@
+
+# Obsidian plugin caches
+obsidian/**/node_modules
+obsidian/**/.DS_Store

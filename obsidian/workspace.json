@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "2955debc2557aaf9",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d98b685b5cf44ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6358cd676a78bb3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Project/MORK/wiki/PathMap/Concurrency.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Concurrency"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d904f7cbe7adb1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d4afaed55d10e29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51c169e6a3bd627c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e9389b2d2f0c0f2d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a0be5008c1be4384",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 341
+  },
+  "right": {
+    "id": "2c17a15e17b4985a",
+    "type": "split",
+    "children": [
+      {
+        "id": "9701abcf7a4e8f16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7e23d6043d4fda1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Hyperon/MOSES.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for MOSES"
+            }
+          },
+          {
+            "id": "286e384ed45cb1df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Hyperon/MOSES.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from MOSES"
+            }
+          },
+          {
+            "id": "e7b5a2c4f9effd98",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2020a97ebee4ea06",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Hyperon/MOSES.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of MOSES"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "active": "6358cd676a78bb3c",
+  "lastOpenFiles": [
+    "Project/MORK/wiki/MeTTa Calculus/Matching.md",
+    "Project/MORK/wiki/MeTTa Calculus/Matching.md.tmp.274192.b625841a7826",
+    "Project/MORK/wiki/MeTTa Calculus/Execution.md",
+    "Project/MORK/wiki/MeTTa Calculus/Execution.md.tmp.274192.298fa0db12b4",
+    "Project/MORK/wiki/MeTTa Calculus/_Index.md",
+    "Project/MORK/wiki/MeTTa Calculus/_Index.md.tmp.274192.a1f4eb514b19",
+    "Project/MORK/wiki/MeTTa Calculus",
+    "Project/MORK/wiki/MeTTa Calculus.md",
+    "Project/MORK/wiki/PathMap/Concurrency.md",
+    "Project/MORK/wiki/PathMap/_Index.md",
+    "Project/MORK/wiki/PathMap/_Index.md.tmp.135845.1d7cce861430",
+    "Project/MORK/wiki/PathMap/_Index.md.tmp.135845.0ade95762964",
+    "Project/MORK/wiki/PathMap/Concurrency.md.tmp.135845.13d787714a61",
+    "Project/MORK/wiki/PathMap/Structure.md",
+    "Project/MORK/wiki/PathMap/Zippers.md",
+    "Project/MORK/wiki/PathMap/LockFreedom.md",
+    "Project/MORK/wiki/Server/Testing.md",
+    "Project/MORK/wiki/Server/Concurrency.md",
+    "Project/MORK/wiki/PathMap.md",
+    "Project/MORK/wiki/PathMap/Concurrency.md.tmp.135845.a75fd03ae07e",
+    "Project/MORK/wiki/PathMap/Zippers.md.tmp.135845.10b5418c3985",
+    "Project/MORK/wiki/PathMap/LockFreedom.md.tmp.135845.e5943d5f9574",
+    "Project/MORK/wiki/Server/Networking.md",
+    "Project/MORK/wiki/Server/_Index.md",
+    "Project/MORK/wiki/Server/Frontend Parsing.md",
+    "Project/MORK/wiki/Server/Server WAL.md",
+    "General.md",
+    "General ToDo.md",
+    "Project/Mettaclaw/notes/API Token Inventory.md",
+    "Project/Mettaclaw/notes/Execution.md",
+    "Project/MORK/plans/WAL Crash Recovery.md",
+    "Project/MORK/notes/[ MORK ] Implement initial phase of WAL..md",
+    "Code Plans/Commit-the-mork-server-test-suite---Jul-18,-2026-12-51am.md",
+    "Project/MORK/plans/metta-calculus-server.md",
+    "Project/MORK/notes/mork-server Test Suite.md",
+    "Project/MORK/notes/Server VM Index.md",
+    "Untitled.canvas"
+  ]
+}

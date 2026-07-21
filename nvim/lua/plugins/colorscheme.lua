@@ -4,12 +4,12 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      theme = "wave",    -- wave (dark), dragon (darker), lotus (light)
+      theme = "wave", -- wave (dark), dragon (darker), lotus (light)
       transparent = false,
     },
     config = function(_, opts)
       require("kanagawa").setup(opts)
-      vim.cmd("colorscheme kanagawa")
+      vim.cmd "colorscheme kanagawa"
     end,
   },
   {
@@ -19,6 +19,7 @@ return {
     opts = {},
     config = function(_, opts)
       require("gruvbox").setup(opts)
+      -- vim.cmd "colorscheme gruvbox"
     end,
   },
 }
